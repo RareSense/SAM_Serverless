@@ -175,7 +175,7 @@ class Model:
 app_model = Model()
 
 # Define the endpoint
-@web_app.post("/mask_image/", response_model=ImageResponse)
+@web_app.post("/mask_image", response_model=ImageResponse)
 async def generate_images_endpoint(request: Request):
     try:
         # Parse the incoming JSON request into an ImageRequest object
